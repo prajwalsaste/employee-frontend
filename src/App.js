@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { Routes, Route } from "react-router-dom";
+
+import Login from "./Login";
+import CompanyPage from "./CompanyPage";
+import AdminPage from "./AdminPage";
+import HRPage from "./HRPage";
+import EmployeePage from "./EmployeePage";
+import Register from "./Register";
 
 function App() {
+
+  const [user, setUser] = useState(
+    JSON.parse(localStorage.getItem("user"))
+  );
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+
+      <Route path="/" element={<Login setUser={setUser} />} />
+
+      <Route path="/companies" element={<CompanyPage user={user} />} />
+      <Route path="/admin" element={<AdminPage user={user} />} />
+      <Route path="/hr" element={<HRPage user={user} />} />
+      <Route path="/employee" element={<EmployeePage user={user} />} />
+      <Route path="/register" element={<Register />} />
+
+    </Routes>
   );
 }
 

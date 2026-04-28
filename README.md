@@ -115,6 +115,31 @@ mvn spring-boot:run
 * File storage on cloud
 * Analytics dashboard
 
+##  Screenshots
+
+###  Employee Dashboard
+
+![Employee Dashboard](employee-dashboard.png)
+
+---
+
+### 🧑‍💼 HR Dashboard
+
+![HR Dashboard](hr-dashboard.png)
+
+---
+
+###  Experience Requests
+
+![Experience](hr.png)
+
+---
+
+###  CV Upload
+
+![CV Upload](cv-upload.png)
+
+
 ---
 
 ##  Author

@@ -118,16 +118,13 @@ mvn spring-boot:run
 ## 📸 Screenshots
 
 ### 👨‍💼 Employee Dashboard
-![Employee](employee-dashboard.png)
+![Employee](public/employee-dashboard.png)
 
 ### 🧑‍💼 HR Dashboard
-![HR](hr-dashboard.png)
+![HR](public/hr-dashboard.png)
 
 ### 📄 CV Upload
-![CV](cv-upload.png)
-
-### 📩 Experience
-![Experience](experience.png)
+![CV](public/cv-upload.png)
 ##  Author
 
 Prajwal Saste

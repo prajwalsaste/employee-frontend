@@ -1,70 +1,122 @@
-# Getting Started with Create React App
+#  Employee Management System (EMS)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+##  Project Overview
 
-In the project directory, you can run:
+Employee Management System is a full-stack web application that allows companies to manage employees, their profiles, CVs, and experience verification workflow.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+##  Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 👨‍💼 Employee Module
 
-### `npm test`
+* Upload CV 📄
+* Add multiple experiences
+* Profile completion score (0–100)
+* View approval status
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🧑‍💼 HR Module
 
-### `npm run build`
+* Approve new employees
+* View pending requests
+* Approve experience
+* Search employees
+* Dashboard stats 
+* Notification system 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠 Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Frontend
 
-### `npm run eject`
+* React.js
+* CSS
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Backend
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Spring Boot
+* REST APIs
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Database
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* MySQL
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+##  System Flow
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Employee registers → status = PENDING
+2. HR approves employee
+3. Employee uploads CV + adds experience
+4. HR verifies experience
+5. Status updates visible to employee
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+##  Database Design
 
-### Analyzing the Bundle Size
+* User Table
+* Experience Table
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+##  API Endpoints (Sample)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* POST `/company/user/{companyId}` → Create employee
+* GET `/company/users/{companyId}` → Get employees
+* PUT `/company/approve/{id}` → Approve employee
+* POST `/experience/add/{userId}` → Add experience
+* PUT `/experience/hr-approve/{id}` → Approve experience
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+##  Setup Instructions
 
-### Deployment
+### Frontend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+npm install
+npm start
+```
 
-### `npm run build` fails to minify
+### Backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+mvn spring-boot:run
+```
+
+---
+
+## 📁 Folder Structure
+
+### Frontend
+
+* src/
+* components/
+* pages/
+
+### Backend
+
+* controller/
+* entity/
+* repository/
+* service/
+* serivceImplemntion
+
+---
+
+##  Future Scope
+
+* Role-based authentication
+* Email notifications
+* File storage on cloud
+* Analytics dashboard
+
+---
+
+##  Author
+
+Prajwal Saste

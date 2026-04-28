@@ -115,33 +115,19 @@ mvn spring-boot:run
 * File storage on cloud
 * Analytics dashboard
 
-##  Screenshots
+## 📸 Screenshots
 
-###  Employee Dashboard
-
-![Employee Dashboard](employee-dashboard.png)
-
----
+### 👨‍💼 Employee Dashboard
+![Employee](employee-dashboard.png)
 
 ### 🧑‍💼 HR Dashboard
+![HR](hr-dashboard.png)
 
-![HR Dashboard](hr-dashboard.png)
+### 📄 CV Upload
+![CV](cv-upload.png)
 
----
-
-###  Experience Requests
-
-![Experience](hr.png)
-
----
-
-###  CV Upload
-
-![CV Upload](cv-upload.png)
-
-
----
-
+### 📩 Experience
+![Experience](experience.png)
 ##  Author
 
 Prajwal Saste

@@ -125,6 +125,9 @@ mvn spring-boot:run
 
 ### 📄 CV Upload
 ![CV](public/cv-upload.png)
+
+### Experience
+![Experience](public/hr.png)
 ##  Author
 
 Prajwal Saste

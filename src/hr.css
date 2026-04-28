@@ -1,0 +1,192 @@
+/* BACKGROUND */
+.hr-container {
+  padding: 30px;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* TITLE */
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  margin-bottom: 25px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+/* SEARCH */
+.search {
+  padding: 10px 14px;
+  width: 280px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.search:focus {
+  border: 1px solid #4f6df5;
+}
+
+/* FORM */
+.form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+/* PRIMARY */
+.btn.primary {
+  background: linear-gradient(135deg, #4f6df5, #6c8cff);
+  color: white;
+}
+
+.btn.primary:hover {
+  box-shadow: 0 5px 15px rgba(79,109,245,0.4);
+}
+
+/* SUCCESS */
+.btn.success {
+  background: #22c55e;
+  color: white;
+}
+
+.btn.success:hover {
+  background: #16a34a;
+}
+
+/* DELETE */
+.btn.danger {
+  background: #ef4444;
+  color: white;
+}
+
+.btn.danger:hover {
+  background: #dc2626;
+}
+
+/* EDIT */
+.btn {
+  background: #64748b;
+  color: white;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* TABLE */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.table th {
+  background: #eef2ff;
+  padding: 12px;
+  text-align: left;
+  color: #334155;
+}
+
+.table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.table tr:hover {
+  background: #f8fafc;
+}
+
+/* BADGES */
+.badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+}
+
+.green {
+  background: #22c55e;
+}
+
+.yellow {
+  background: #f59e0b;
+}
+
+/* LINKS */
+.link {
+  color: #4f6df5;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.no {
+  color: #94a3b8;
+}
+
+/* PAGINATION */
+.pagination {
+  margin-top: 15px;
+  display: flex;
+  gap: 8px;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  border: none;
+  background: #e0e7ff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.pagination button.active {
+  background: #4f6df5;
+  color: white;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+}
+
+/* SECTION HEADINGS */
+h3 {
+  margin-bottom: 10px;
+  color: #1e293b;
+}
